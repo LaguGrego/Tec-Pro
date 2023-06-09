@@ -1,5 +1,5 @@
 #lang racket
-#| Trabajo práctico 2 - Tecnologías de la programación 
+#| Trabajo práctico 2 - Tecnologías de la programación |#
  
 #| Ejercicio 1 |#
 
