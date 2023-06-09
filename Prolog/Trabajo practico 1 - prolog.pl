@@ -17,7 +17,6 @@ f(X, Y), f(X, 4).  => X = b, Y = 2
 */ 
 
                                                /* Ejercicio 2 */  
-  /*esta todo comentado porq sino me da error en los ejercicios siguientes
 padre(leoncio, alberto).
 padre(leoncio, geronimo).
 padre(alberto, juan).
@@ -27,7 +26,7 @@ hermano(X,Y):-
     padre(Z,X), padre(Z,Y), X\=Y.
 nieto(X,Y):- 
     padre(Y,Z), padre(Z,X).
- 
+ /*
 como consultaria si alberto es padre de luis?------padre(alberto,luis).  => true
 como consultaria si luis es padre de alberto?------padre(luis, alberto).  => false
 como consultaria quien es hermano de luis?---------hermano(luis, X). => juan
