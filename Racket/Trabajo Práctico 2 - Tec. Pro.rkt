@@ -1,7 +1,7 @@
 #lang racket
 #| Trabajo práctico 2 - Tecnologías de la programación 
  
-;Ejercicio 1
+#| Ejercicio 1 |#
 
 (define a 1)
 (define b 2)
@@ -15,7 +15,7 @@
  (cons (car (ls)) (cdr (ls)))
   )
 
-;Ejercicio 2
+#| Ejercicio 2 |#
 
 (let ((x 9))
   (* x
@@ -25,7 +25,7 @@
   )
  )
 
-;Ejercicio 3
+#| Ejercicio 3 |#
 
 a)
 
@@ -48,7 +48,7 @@ b)
 
  => '(c b a b)
 
-Ejercicio 4
+#| Ejercicio 4 |#
 
 (let ((f (lambda (x) x)))
 (f 'a)) => 'a
@@ -62,7 +62,7 @@ Ejercicio 4
 (let ((f (lambda (x . y) y)))
 (f 'a)) => '()
 
-Ejercicio 5|#
+#| Ejercicio 5 |#
 
 (define scheme-syntax (lambda (ls)
        (let ((first-num (car ls))(operator (car (cdr ls)))
@@ -71,7 +71,8 @@ Ejercicio 5|#
          )
   )
 )
-#|Ejercicio 6|#
+
+#| Ejercicio 6 |#
 (define shorter
   (lambda (l1 l2)
     (if (> (length l1) (length l2))
@@ -80,26 +81,30 @@ Ejercicio 5|#
       )
   )
  )
-#|Ejercicio 7|#
+ 
+#| Ejercicio 7 |#
 (define pi 3.1416)
 (define area
   (lambda (r)
     (* r r pi)
     )
   )
-#|Ejercicio 8|#
+  
+#| Ejercicio 8 |#
 (define perimetro
   (lambda (r)
     (* r 2 pi)
     )
   )
-#|Ejercicio 9|#
+  
+#| Ejercicio 9 |#
 (define circlestuff
   (lambda (r)
     (list (area r)(perimetro r))
     )
   )
-#|Ejercicio 10|#
+  
+#| Ejercicio 10 |#
 (define distance2d
   (lambda(pto1 pto2)
     (let ((x (- (car pto2) (car pto1)))(y (- (cdr pto2) (cdr pto1))))
@@ -107,7 +112,8 @@ Ejercicio 5|#
     )
    )
   )
-#|Ejercicio 10|#
+  
+#| Ejercicio 11 |#
 (define proximo_r
   (lambda (dist-min pto ls)
     (if (null? ls)
