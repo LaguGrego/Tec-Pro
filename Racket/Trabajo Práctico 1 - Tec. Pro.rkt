@@ -8,7 +8,7 @@ Ejercicio 1                                     |#
 (* 1 (* -2 (* 3 (* -4 (* 5 (* -6 7))))))
 
 
-#|Ejercicio 2
+#| Ejercicio 2 |#
 (cons 'car '+) => (car . +) 
 (list 'esto '(es muy fácil)) => (esto (es muy facil))
 (cons 'pero '(se está complicando...)) => (pero se está complicando...) 
@@ -25,34 +25,34 @@ cons => #<procedure:cons>
 (+ '2 '3) => 5
 (+ (car '(2 3)) (car (cdr '(2 3)))) => 5
 ((car (list + - * /)) 2 3) => 5
-|#
 
 
-#|Ejercicio 3
+
+#| Ejercicio 3 |#
 (car (car '((a b) (c d)))) => a
 (car (cdr (car '((a b) (c d))))) => b
 (car (car (cdr '((a b) (c d))))) => c
 (car (cdr (car (cdr '((a b) (c d)))))) => d
-|#
 
 
-#|Ejercicio 4
+
+#| Ejercicio 4 |#
 Todas las de ejercicio anterior, ademas:
 (car '((a b) (c d))) => '(a b)
 (cdr '((a b) (c d))) => '((c d))
 (car (cdr '((a b) (c d)))) => '(c d)
 (cdr (car (cdr '((a b) (c d))))) => '(d)
-|#
 
 
-#|Ejercicio 5
+
+#| Ejercicio 5
 Primero list genera una lista (+ - * /), cdr extrae de esta lista la sublista
 (- * /), al aplicarle de nuevo cdr se obtiene una segunda sublista (* /),
 luego car devuelve *, por lo q la expresión final es (* 5 5) => 25
 |#
 
 
-#|Ejercicio 6|#
+#| Ejercicio 6 |#
 (cdr (cdr (cdr '(a b c . x))))
 (car (cdr (cdr (cdr '(a b c x)))))
 (cdr (car '((a . x) b)))
